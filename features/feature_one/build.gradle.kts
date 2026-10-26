@@ -5,8 +5,8 @@ plugins {
 android {
     namespace = "com.app.features.feature_one"
     compileSdk {
-        version = release(36) {
-            minorApiLevel = 1
+        version = release(37) {
+            minorApiLevel = 0
         }
     }
 

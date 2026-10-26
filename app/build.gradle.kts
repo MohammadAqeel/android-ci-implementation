@@ -7,7 +7,7 @@ android {
     namespace = "mohammad.aqeel.android.ci"
     compileSdk {
         version = release(37) {
-            minorApiLevel = 1
+            minorApiLevel = 0
         }
     }
 
