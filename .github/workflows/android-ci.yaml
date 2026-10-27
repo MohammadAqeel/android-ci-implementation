@@ -33,5 +33,11 @@ jobs:
           name: unit-test-reports
           path: '**/build/reports/tests/'
 
+      - name: Publish test results
+        if: always()
+        uses: mikepenz/action-junit-report@v5
+        with:
+          report_paths: '**/build/test-results/**/*.xml'
+
       - name: Build debug APK
         run: ./gradlew assembleDebug
